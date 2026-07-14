@@ -1,0 +1,24 @@
+<meta charset="UTF-8"><body id=b onload=eval(b.textContent)><pre>
+c=b.textContent;S=b.style;l=c.split('\n')[1].length;
+K=240;S[""/*🭄█*/+"background"]='#000';s=c.split('');
+C=(x,i)=>x/*██*/.charCodeAt(0)>K?+K>i?'#e81':'#c60':
+'#222';    "██";
+           "██ ███████████🭏 🭄█████████████🭏";
+           "██";       "🭥██ ██🭚";      "🭥██";
+           "██";        "██ ██";        "██";
+           "██";        "██ ██";        "██";
+           "██";        "██ ██";        "██";
+           "██";        "██ ██";        "██";
+           "██🬿";      "🭊██ ██";        "██";
+           "🭕█████████████🭠 🭕█";        "█🭠";
+
+
+// code here
+z = F => {
+  b.innerHTML = '\74pre\76'+s.map((x,i)=>{
+    return x.fontcolor(C(x,i))
+  }).join('');
+  setTimeout(z, 500);
+};
+S.fontSize = '3vw';
+z();

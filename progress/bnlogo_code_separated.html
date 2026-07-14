@@ -1,0 +1,29 @@
+<meta charset="UTF-8"><body id=b onload=eval(b.textContent)><pre>
+
+            "🭄█",
+            "██",
+            "██ ███████████🭏 🭄█████████████🭏",
+            "██",       "🭥██ ██🭚",      "🭥██",
+            "██",        "██ ██",        "██",
+            "██",        "██ ██",        "██",
+            "██",        "██ ██",        "██",
+            "██",        "██ ██",        "██",
+            "██🬿",      "🭊██ ██",        "██",
+            "🭕█████████████🭠 🭕█",        "█🭠",
+
+// code here
+c = b.textContent;
+S = b.style;
+l = c.split('\n')[1].length;
+s = c.split('');
+K = 240;
+C = (x,i) => x.charCodeAt(0) > K ? K > i ? '#e81' : '#c60' : '#222';
+z = F => {
+  b.innerHTML = '\74pre\76'+s.map((x,i)=>{
+    return x.fontcolor(C(x,i))
+  }).join('');
+  setTimeout(z, 500);
+};
+S.background = '#000';
+S.fontSize = '3vw';
+z();

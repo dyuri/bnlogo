@@ -1,0 +1,28 @@
+<meta charset="UTF-8"><body id=b onload=eval(b.textContent)><pre>
+c=b.textContent;S=b.style;l=c.split('\n')[1].length;
+K=240;S[""/*🭄█*/+"background"]='#000';s=c.split('');
+C=(x,i)=>x/*██*/.charCodeAt(0)>K?+K>i?'#e81':'#c60':
+0;m='-1';B="██"[0];f='font';S.letterSpacing=m+'px';S
+[f+'Size']/*██ ███████████🭏 🭄█████████████🭏*/='3vw';
+           "██";       "🭥██ ██🭚";      "🭥██";
+           "██";        "██ ██";        "██";
+           "██";        "██ ██";        "██";
+           "██";        "██ ██";        "██";
+           "██";        "██ ██";        "██";
+           "██🬿";      "🭊██ ██";        "██";
+           "🭕█████████████🭠 🭕█";        "█🭠";
+
+
+r = 129792;
+S.color='#222';
+S.lineHeight='1.2em';
+z = F => {
+  b.innerHTML = '\74pre\76'+s.map((x,i)=>{
+    cp = r+Math.random()*60;
+    v = x==B?String.fromCodePoint(~~cp):x;
+    c = C(x,i);
+    return c?v.fontcolor(c):v;
+  }).join('');
+  setTimeout(z, 500);
+};
+z();
